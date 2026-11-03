@@ -7,7 +7,7 @@
   "author": "Emir Konur",
   "repository": {
     "type": "git",
-    "url": "https://github.com/emirk35/chalkline.git"
+    "url": "https://github.com/EmirKonur/chalkline.git"
   },
   "type": "module",
   "packageManager": "pnpm@9.15.0",

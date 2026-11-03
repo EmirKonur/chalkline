@@ -5,7 +5,7 @@
 
 A real-time multiplayer whiteboard: open a link, draw with other people, keep drawing when the connection drops, and watch it all merge when it comes back.
 
-[![CI](https://github.com/emirk35/chalkline/actions/workflows/ci.yml/badge.svg)](https://github.com/emirk35/chalkline/actions/workflows/ci.yml)
+[![CI](https://github.com/EmirKonur/chalkline/actions/workflows/ci.yml/badge.svg)](https://github.com/EmirKonur/chalkline/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-f3df94?style=flat-square&labelColor=21352e)](LICENSE)
 [![Node 26](https://img.shields.io/badge/node-26_LTS-aee3c6?style=flat-square&labelColor=21352e)](.nvmrc)
 [![TypeScript](https://img.shields.io/badge/typescript-strict-a9d3ef?style=flat-square&labelColor=21352e)](tsconfig.base.json)
@@ -24,7 +24,7 @@ The board itself is an infinite canvas with a pressure-sensitive chalk pen, rect
 ## Quick start
 
 ```sh
-git clone https://github.com/emirk35/chalkline.git
+git clone https://github.com/EmirKonur/chalkline.git
 cd chalkline
 pnpm install
 pnpm dev
