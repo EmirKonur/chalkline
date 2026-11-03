@@ -1,0 +1,45 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      yjs:
+        patterns: ['yjs', 'y-*', 'lib0']
+      tooling:
+        patterns:
+          [
+            'eslint*',
+            '@eslint/*',
+            'typescript*',
+            'prettier',
+            'vitest',
+            '@vitest/*',
+            'globals',
+            '@types/*',
+          ]
+      web:
+        patterns:
+          [
+            'react*',
+            'vite',
+            '@vitejs/*',
+            '@playwright/*',
+            '@phosphor-icons/*',
+            '@fontsource*',
+            'perfect-freehand',
+          ]
+      server:
+        patterns: ['ws', 'pino*', 'sirv']
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ['*']
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly

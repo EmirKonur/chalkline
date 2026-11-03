@@ -1,0 +1,8 @@
+pnpm-lock.yaml
+dist/
+coverage/
+data/
+.github/assets/
+apps/web/test-results/
+apps/web/playwright-report/
+apps/web/bench-results/

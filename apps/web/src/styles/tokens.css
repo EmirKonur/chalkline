@@ -1,0 +1,117 @@
+/*
+ * Design tokens. Two themes share one scale: "chalkboard" (default) is a deep
+ * slate-green board with pastel chalk, "whiteboard" is warm off-white with
+ * marker tones. Ink colors used on the canvas live in theme/palette.ts.
+ */
+:root {
+  --font-ui: 'Nunito Variable', Nunito, ui-rounded, system-ui, sans-serif;
+
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-md: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2.25rem;
+  --text-3xl: 3.25rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-slow: 360ms;
+
+  --chalk-white: #f4f1e8;
+  --chalk-pink: #efb3c1;
+  --chalk-butter: #f3df94;
+  --chalk-sky: #a9d3ef;
+  --chalk-mint: #aee3c6;
+  --chalk-lilac: #cfc0f1;
+  --chalk-peach: #f5c19d;
+
+  --z-canvas: 0;
+  --z-cursors: 10;
+  --z-overlay: 20;
+  --z-palette: 30;
+  --z-popover: 40;
+  --z-dialog: 50;
+  --z-toast: 60;
+}
+
+:root,
+[data-theme='chalkboard'] {
+  color-scheme: dark;
+  --board: #21352e;
+  --board-deep: #15231e;
+  --board-vignette: rgba(4, 12, 9, 0.6);
+  --board-smudge: rgba(244, 241, 232, 0.035);
+
+  --felt: #2a4038;
+  --felt-raised: #34503f;
+  --felt-sunken: #1c2e27;
+  --felt-edge: rgba(244, 241, 232, 0.1);
+  --felt-highlight: rgba(255, 255, 255, 0.07);
+
+  --text: #f4f1e8;
+  --text-muted: #c4cfc7;
+  --text-faint: #9db2a6;
+  --accent: #f3df94;
+  --accent-ink: #2b2410;
+  --focus: #f3df94;
+  --ok: #aee3c6;
+  --warn: #f5c19d;
+  --danger: #f2a7a7;
+
+  --shadow-palette:
+    inset 0 1px 0 var(--felt-highlight), inset 0 -1px 0 rgba(0, 0, 0, 0.28),
+    0 12px 30px -12px rgba(0, 0, 0, 0.65), 0 2px 6px rgba(0, 0, 0, 0.28);
+  --shadow-pressed: inset 0 2px 5px rgba(0, 0, 0, 0.45), inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+  --shadow-pop: 0 18px 50px -16px rgba(0, 0, 0, 0.7), 0 3px 10px rgba(0, 0, 0, 0.3);
+  --scrim: rgba(10, 18, 15, 0.62);
+}
+
+[data-theme='whiteboard'] {
+  color-scheme: light;
+  --board: #f5f3ee;
+  --board-deep: #e7e3da;
+  --board-vignette: rgba(110, 100, 80, 0.12);
+  --board-smudge: rgba(42, 48, 45, 0.02);
+
+  --felt: #fffefb;
+  --felt-raised: #f3f0e9;
+  --felt-sunken: #e8e4da;
+  --felt-edge: rgba(42, 48, 45, 0.13);
+  --felt-highlight: rgba(255, 255, 255, 0.95);
+
+  --text: #24302a;
+  --text-muted: #4f5c55;
+  --text-faint: #5d6862;
+  --accent: #2d74b3;
+  --accent-ink: #ffffff;
+  --focus: #2d74b3;
+  --ok: #2a855b;
+  --warn: #9a4515;
+  --danger: #b8363f;
+
+  --shadow-palette:
+    inset 0 1px 0 var(--felt-highlight), 0 12px 26px -14px rgba(40, 44, 40, 0.32),
+    0 1px 3px rgba(40, 44, 40, 0.14);
+  --shadow-pressed: inset 0 2px 4px rgba(40, 44, 40, 0.18);
+  --shadow-pop: 0 18px 44px -18px rgba(40, 44, 40, 0.4), 0 2px 8px rgba(40, 44, 40, 0.12);
+  --scrim: rgba(60, 64, 58, 0.32);
+}

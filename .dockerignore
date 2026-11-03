@@ -1,0 +1,16 @@
+**/node_modules
+**/dist
+**/coverage
+**/*.tsbuildinfo
+data
+*.db
+*.db-*
+apps/web/test-results
+apps/web/playwright-report
+apps/web/bench-results
+.github
+docs
+*.md
+.env
+.env.*
+!.env.example

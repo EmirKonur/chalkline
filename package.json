@@ -1,0 +1,41 @@
+{
+  "name": "chalkline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A real-time multiplayer whiteboard built on Yjs, with offline editing and a chalkboard feel.",
+  "license": "MIT",
+  "author": "Emir Konur",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emirk35/chalkline.git"
+  },
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @chalkline/server --filter @chalkline/web dev",
+    "build": "pnpm --filter @chalkline/web build",
+    "start": "pnpm --filter @chalkline/server start",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "pnpm build && pnpm --filter @chalkline/web test:e2e",
+    "bench:render": "pnpm build && pnpm --filter @chalkline/web bench:render",
+    "seed:demo": "pnpm --filter @chalkline/web seed:demo"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.14.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.14.0",
+    "prettier": "3.9.10",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vitest": "5.1.0"
+  }
+}

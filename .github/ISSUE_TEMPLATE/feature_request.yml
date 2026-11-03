@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest a tool, a workflow, or a change to how boards sync.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do on a board that is awkward or impossible today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like
+  - type: textarea
+    id: collaboration
+    attributes:
+      label: How should it behave with several people on the board?
+      description: For example, what happens if two people use it on the same shape at once.

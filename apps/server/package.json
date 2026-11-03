@@ -1,0 +1,26 @@
+{
+  "name": "@chalkline/server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chalkline sync server: y-protocols over WebSockets with SQLite persistence.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/index.ts",
+    "start": "node --disable-warning=ExperimentalWarning src/index.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@chalkline/core": "workspace:*",
+    "lib0": "0.2.119",
+    "pino": "10.4.0",
+    "sirv": "3.0.2",
+    "ws": "8.22.1",
+    "y-protocols": "1.0.7",
+    "yjs": "13.6.33"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/ws": "8.18.2",
+    "pino-pretty": "13.2.0"
+  }
+}

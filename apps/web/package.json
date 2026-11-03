@@ -1,0 +1,37 @@
+{
+  "name": "@chalkline/web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chalkline web client: infinite canvas, tools, presence, and offline editing.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.node.json",
+    "test:e2e": "playwright test",
+    "bench:render": "node --disable-warning=ExperimentalWarning scripts/bench-render.ts",
+    "seed:demo": "node --disable-warning=ExperimentalWarning scripts/seed-demo.ts"
+  },
+  "dependencies": {
+    "@chalkline/core": "workspace:*",
+    "@fontsource-variable/nunito": "5.3.0",
+    "@phosphor-icons/react": "2.1.10",
+    "lib0": "0.2.119",
+    "perfect-freehand": "1.2.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "y-indexeddb": "9.0.12",
+    "y-protocols": "1.0.7",
+    "yjs": "13.6.33"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.2.1",
+    "fast-check": "4.10.2",
+    "vite": "8.3.5"
+  }
+}

@@ -1,0 +1,17 @@
+services:
+  chalkline:
+    build: .
+    image: chalkline:local
+    ports:
+      - '4110:4110'
+    environment:
+      # Set to your public origin (for example https://board.example.com) to
+      # refuse WebSocket upgrades from other sites.
+      ALLOWED_ORIGINS: ''
+      LOG_LEVEL: info
+    volumes:
+      - chalkline-data:/data
+    restart: unless-stopped
+
+volumes:
+  chalkline-data:

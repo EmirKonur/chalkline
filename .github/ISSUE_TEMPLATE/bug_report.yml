@@ -1,0 +1,42 @@
+name: Bug report
+description: Something on the board does not work the way it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a new board in two browsers
+        2. Draw a stroke in the first one
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection state when it happened
+      options:
+        - Live
+        - Reconnecting
+        - Offline
+        - Not sure
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      placeholder: Chrome 156 on macOS 15
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output or server logs
+      render: text

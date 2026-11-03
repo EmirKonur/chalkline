@@ -1,0 +1,24 @@
+{
+  "name": "@chalkline/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Document model, z-ordering, wire protocol, and sync client shared by the Chalkline web app and server.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./provider": "./src/provider.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "fractional-indexing": "4.0.0",
+    "lib0": "0.2.119",
+    "y-protocols": "1.0.7",
+    "yjs": "13.6.33"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "fast-check": "4.10.2"
+  }
+}
