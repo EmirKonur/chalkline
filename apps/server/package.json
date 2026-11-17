@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@chalkline/core": "workspace:*",
-    "lib0": "0.2.119",
+    "lib0": "0.2.120",
     "pino": "10.4.0",
     "sirv": "3.0.2",
     "ws": "8.22.1",
